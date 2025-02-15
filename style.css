@@ -74,22 +74,26 @@ select {
     margin-left: 30px;
   }
 
-.one {
-  color: rgb(255, 0, 0);
-}
- 
-.two {
-  color: rgb(255, 106, 0);
-}
- 
-.three {
-  color: rgb(251, 255, 120);
-}
- 
-.four {
-  color: rgb(255, 255, 0);
-}
- 
-.five {
-  color: rgb(24, 159, 14);
-}
+  .star:hover {
+    color: rgba(255, 255, 168, 0.816);
+  }
+
+  .one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(255, 255, 0);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
+  }
