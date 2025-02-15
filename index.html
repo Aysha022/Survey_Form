@@ -6,6 +6,7 @@
        <meta charset="UTF-8">
        <meta name = "viewport" content = "width = device-width ,initial-scale = 1.0">
        <link href="style.css" rel="stylesheet">
+       <script src = "script.js"></script>
     </head>
 
    <body>
@@ -23,12 +24,80 @@
                         <label for = "name" id = "name-label">Name:
                         <input id = "name" type = "text" placeholder = "Enter your name" required/></label>
                     </div> 
-                    
-
-
+                    <div class = "form-group">
+                        <label for = "email" id = "email-label">Email:
+                        <input id = "email" type = "email" placeholder = "Enter your email" required/></label>
+                    </div> 
+                    <div class="form-group">
+                        <label>Department:
+                            <select id = "dropdown" required>
+                                <option disabled selected value>select one</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="CIVIL">CIVIL</option>
+                                <option value="MECH">MECH</option>
+                                <option value="ROBOTICS">ROBOTICS</option>
+                                <option value="B-ARCH">B-ARCH</option>
+                            </select>
+                      </label>
+                    </div>
+                    <hr>
+                    <h3>📝 Quickfire Feedback - Let's Go!</h3>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">1️⃣ How was your Tink Her Hack 3.0 experience?</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/> Absolutely mind-blowing 🚀</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/>Super fun and learned a lot 🎯</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/>Meh, could be better 🤷‍♀️</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/>SOS, I need sleep 😴</label>
+                        </div>
+                    <hr>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">2️⃣What was your "Aha! 🤯" moment during the hackathon?
+                            <textarea placeholder="✍️Pour your thoughts out!" row="4" cols="40"></textarea>
+                            </label>     
+                        </div>
+                    <hr>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">3️⃣How did your brain cells feel during the hack?</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/> Smooth like butter 🧈</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/> Running on coffee ☕</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/> 404 Brain Not Found 😵</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="radio" name="recommended"/> Powering up like Iron Man ⚡</label>
+                        </div>
+                   <hr>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">4️⃣What were the best parts of Tink Her Hack 3.0 for you?<i>(Select all that apply!)</i></label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox"> The hackathon theme was fire! 🔥</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">The teamwork & coding vibes 👩‍💻👨‍💻</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">Learning new tech & tools 🚀</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">The mentors & support squad 🤝</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">The snacks & chill breaks 🍕☕</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">The final pitch—felt like Shark Tank! 🦈</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">The prizes & surprises 🎁🎉</label>
+                            <label style = "font-size: 18px;"><input class="inline"  type="checkbox">Just the overall lit vibes! ✨</label>
+                        </div>      
+                   <hr>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">5️⃣If we gave you a magic wand🪄to change something, what would it be?
+                            <textarea placeholder="✍️Abra-Ca-Dabra!!!" row="4" cols="40"></textarea>
+                            </label>     
+                        </div>
+                   <hr>
+                        <div class="form-group">
+                            <label style = "font-size: 20px;">6️⃣Rate the overall vibes!(From "Meh" to "Lit🔥")</label>
+                            <div class="card">
+                                <span onclick = "rating(1)" class="star">★</span>
+                                <span onclick = "rating(2)" class="star">★</span>
+                                <span onclick = "rating(3)" class="star">★</span>
+                                <span onclick = "rating(4)" class="star">★</span>
+                                <span onclick = "rating(5)" class="star">★</span>
+                            </div>
+                        </div>
                 </form>
             </div>
-        </div>          
+        </div>
+    <hr>          
    </body>
 
 </html>
